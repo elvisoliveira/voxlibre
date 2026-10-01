@@ -20,9 +20,8 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
+      # ubuntu-latest ships the Android SDK with licenses pre-accepted (ANDROID_HOME set);
+      # AGP auto-downloads any missing platform/build-tools.
       - name: Build release APK
         run: ./gradlew :app:assembleRelease --no-daemon
 

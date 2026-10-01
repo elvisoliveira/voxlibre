@@ -1,0 +1,3 @@
+-keep class app.voxlibre.RingViewModel { <init>(android.app.Application); }
+-keep class app.voxlibre.RingEngine { *; }
+-keep class app.voxlibre.RingEngine$* { *; }

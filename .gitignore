@@ -1,0 +1,16 @@
+# Android / Gradle
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+**/build/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# reference dumps (not needed in VCS)
+/reference/
